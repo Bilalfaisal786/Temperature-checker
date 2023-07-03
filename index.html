@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Checker</title>
+</head>
+
+<body>
+    <h1>
+        Check Weather Now
+    </h1>
+    <script>
+        var weather = prompt("Type Weather In Centigrade")
+        if (weather <= 10) {
+            document.write("Weather is too Cold");
+        }
+
+        else if (weather < 20 && weather > 10) {
+            document.write("Weather is Cold");
+
+        }
+        else if (weather == 20) {
+            document.write("Weather is Normal");
+
+        }
+        else if (weather > 20 && weather <= 40) {
+            document.write("Weather is Hot");
+        }
+        else if (weather > 40) {
+            document.write("Weather is too Hot");
+        } else {
+            document.write("Enter Valid Weather in Centigrade ");
+
+        }
+
+    </script>
+</body>
+
+</html>
